@@ -1,0 +1,9 @@
+
+- name: get syslog file
+  hosts: all
+  become: true
+  tasks:
+    - name:
+      fetch:
+        src: /var/log/syslog
+        dest: ~/servers/
